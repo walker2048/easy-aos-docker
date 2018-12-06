@@ -35,7 +35,10 @@ exec("docker run  --name build -t --rm walker2048/easy-aos:slim pip list --outda
 		setUpgrade()
 		triggerBuild()
 	} else {
-		result.push(`${data.toLocaleDateString()} ${data.toLocaleTimeString}: aos-cube is up to date`)
+		result.push(`${data.toLocaleDateString()} ${data.toLocaleTimeString()}: aos-cube is up to date`)
+		result.forEach((line) => {
+			console.log(line)
+		})
 	}
 })
 
