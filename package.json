@@ -1,0 +1,24 @@
+{
+  "name": "easy-aos-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^10.12.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walker2048/easy-aos-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walker2048/easy-aos-docker/issues"
+  },
+  "homepage": "https://github.com/walker2048/easy-aos-docker#readme"
+}
