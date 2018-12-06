@@ -10,7 +10,7 @@ let settings = {
 }
 
 const setUpgrade = function () {
-	fs.writeFileSync("settings.json", JSON.stringify(settings))
+	fs.writeFileSync("/home/walker/easy-aos-docker/update", JSON.stringify(settings))
 }
 
 const triggerBuild = function () {
@@ -34,6 +34,8 @@ exec("docker run  --name build -t --rm walker2048/easy-aos:slim pip list --outda
 		result.push(`aos-cube ${match.groups!.version} is outdate, latest version is ${match.groups!.latest}`)
 		setUpgrade()
 		triggerBuild()
+	} else {
+		result.push(`${data.toLocaleDateString()} ${data.toLocaleTimeString}: aos-cube is up to date`)
 	}
 })
 
