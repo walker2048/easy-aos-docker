@@ -7,6 +7,7 @@ echo "https://mirrors.aliyun.com/alpine/v3.9/community/" >> /etc/apk/repositorie
 apk update && apk upgrade && \
 apk add --no-cache \
 bash \
+dash \
 git \
 wget \
 gcc \
