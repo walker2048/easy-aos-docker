@@ -1,5 +1,5 @@
 # 使用python2.7作为初始镜像
-FROM python:2.7-stretch
+FROM python:2.7-slim-stretch
 
 # 添加i386库支持
 RUN echo "deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib" > /etc/apt/sources.list && \
