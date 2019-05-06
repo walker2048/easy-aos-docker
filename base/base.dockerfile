@@ -10,6 +10,12 @@ bash \
 dash \
 git \
 wget \
+musl-dev \
+g++ \
+texinfo \
+m4 \
+dejagnu \
+ncurses \
 gcc \
 make
 
